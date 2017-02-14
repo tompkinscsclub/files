@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+</style>
+</head>
+
+
+<title>Login</title>
+<body style="background-color:#800000">
+<center>
+
+<h1>Login Page</h1>
+<h3>Made by Varun Hari</h3>
+<h3>and Kishore Mugundhan</h3>
+<div style="font-color:blue">
+    
+<form method="post" action="check.php">
+Username: <input type="text" name="username">
+Password: <input type="password" name="password">
+
+<input type="submit">
+</form>
+<br><br><br><br>
+
+
+
+     
+<img src="falconsnewer.jpg" height="442px" width="600px"></img> 
+</div>
+<script>
+    function loginFunction()
+	{
+                
+	    
+		var user= document.getElementById("usern").value;
+		var pass= document.getElementById("passw").value;
+		var actUser="admin";
+		var actPass="password";
+		
+		if (actUser==user && actPass==pass){
+			
+			window.location = "admin.html";
+		}
+                
+		
+	}
+    
+</script>
+</center>
+</body>
+</html>
